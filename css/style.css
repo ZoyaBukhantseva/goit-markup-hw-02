@@ -1,11 +1,20 @@
+:root {
+  --main-text-color: #212121;
+  --second-text-color: #757575;
+  --text-buttom-color: #ffffff;
+  --acent-color: #2196f3;
+  --bgr-color-acent: #2f303a;
+}
+ul {
+  list-style: none;
+}
 body {
   font-family: "Roboto", sans-serif;
 }
 
-.header-logo {
-  color: #2196f3;
+.logo {
+  color: var(--acent-color);
   font-family: Raleway;
-  font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
@@ -13,8 +22,7 @@ body {
 }
 
 .header-link {
-  color: #212121;
-  font-style: normal;
+  color: var(--main-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -22,37 +30,88 @@ body {
 }
 .header-link:hover,
 .header-link:focus {
-  color: #2196f3;
+  color: var(--acent-color);
 }
 
 .hero-title {
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
-
+  color: var(--text-buttom-color);
   text-align: center;
   width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
   background-color: #2f303a;
 }
 .hero-button {
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
-  color: #ffffff;
+  color: var(--text-buttom-color);
   width: 200px;
   height: 50px;
   left: 700px;
   top: 430px;
-  background: #2196f3;
+  background: var(--acent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-.peculiarities
+.peculiarities-list {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.peculiarities-item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1, 7;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+.about-tittle,
+.team-tittle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+}
+.team-list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+.team-item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+.footer {
+  background-color: var(--bgr-color-acent);
+}
+.footer-list {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+a[href=" https://goo.gl/maps/LfRihioMRKPNniMt5"]
+{
+  color: var(--text-buttom-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
