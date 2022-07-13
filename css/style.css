@@ -8,13 +8,12 @@
   --bgr-second-color :#F5F4FA;
  
 }
-a {
+.link {
   text-decoration: none;
 }
+.list
+{list-style: none; }
 
-ul {
-  list-style: none;
-}
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--bgr-color);
@@ -48,7 +47,7 @@ body {
 .header-link:focus {
   color: var(--acent-color);
 }
-.portfolio-button:hover, portfolio-button:focus {
+.portfolio-button:hover, .portfolio-button:focus {
 color:var(--text-buttom-color);
 background-color: var(--acent-color);
 }
